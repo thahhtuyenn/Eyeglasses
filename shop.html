@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <!-- Google Font DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!--Reset CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/shop.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+</head>
+<body>
+    <div class="app">
+        <!--Start Navbar-->
+        <div class="navbar">
+            <div class="brand-wrapper">
+                <div class="grid wide">
+                    <div class="brand">
+                        <div class="navbar__brand-title">
+                            <h1 class="brand-title-text"><b>Eya Glasses</b></h1>
+                        </div>
+    
+                        <div class="navbar__brand-phoneship">
+                            <ul class="brand-phoneship-list">
+                                <li class="phoneship-list-item">
+                                    <i class="fa-sharp fa-solid fa-phone logo-icon phoneship-list-item-icon"></i>
+                                    Call Center
+                                </li>
+    
+                                <li class="phoneship-list-item">
+                                    <i class="fa-solid fa-truck-fast logo-icon phoneship-list-item-icon"></i>
+                                    Shipping & Returns 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-wrapper">
+                <div class="grid wide">
+                    <div class="header">
+                        <div class="navbar__catesearch-category">
+                            <ul class="catesearch-category-list">
+                                <li class="category-list-item">
+                                    <a href="shop.html" class="category-list-item-link">Shop</a>
+                                </li>
+    
+                                <li class="category-list-item">
+                                    <a href="details.html" class="category-list-item-link">Details</a>
+                                </li>
+    
+                                <li class="category-list-item">
+                                    <a href="gallery.html" class="category-list-item-link">Gallery</a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="navbar__catesearch-search">
+                            <input type="text"  class="category-search-input" placeholder="Search what you need ">
+                            <i class="fa-solid fa-magnifying-glass category-search-icon"></i>
+                        </div>
+    
+                        <div class="navbar__catesearch-menu">
+                            <ul class="catesearch-list">
+                                <li class="catesearch-list-item">
+                                    <a href="#" class="catesearch-list-item-link"><i class="fa-regular fa-heart catesearch-list-item-icon"></i></a>
+                                </li>
+    
+                                <li class="catesearch-list-item">
+                                    <a href="cart.html" class="catesearch-list-item-link"><i class="fa-solid fa-cart-shopping catesearch-list-item-icon"></i></a>
+                                </li>
+    
+                                <li class="catesearch-list-item">
+                                    <a href="#" class="catesearch-list-item-link"><i class="fa-solid fa-user catesearch-list-item-icon"></i></a>
+                                </li>
+    
+                                <li class="catesearch-list-item">
+                                    <a href="#" class="catesearch-list-item-link"><i class="fa-regular fa-bell catesearch-list-item-icon"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!--End Navbar-->
+
+        <!--Start Hero-->
+        <div class="hero">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-6 m-12 c-12">
+                        <img class="hero-img" style="width: 100%; height: 100%; padding: 60px 0;" src="https://static.zennioptical.com/marketing/homepage/2tile/2_tile_var_b_1/Trends_2Tile-lg.png" alt="">
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="hero-main">
+                            <h1 class="hero-title">Your Premium Sound, Unplugged</h1>
+                            <p class="hero-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <button class="btn btn--find-out-more">Find out More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Hero-->
+
+        <!--Start Shop-->
+        <div class="app__shop">
+            <div class="grid wide">
+               <div class="shop">
+                    <div class="row">
+                        <div class="col l-4 m-12 c-12">
+                            <div class="shop-left">
+                                <div class="shop-left-search">
+                                    <input type="text" class="search-input" placeholder="Search products">
+                                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                </div>
+
+                                <div class="shop-left-price">
+                                    <div class="price-title">
+                                        <p class="price-title-text">Price</p>
+                                        <i class="fa-solid fa-filter price-icon"></i>
+                                    </div>
+
+                                    <div class="price-item">
+                                        <p class="price-item-text">Range</p>
+                                        <p class="price-item-text">$5 - $20</p>
+                                    </div>
+                                </div>
+
+                                <div class="shop-left-prdcategory">
+                                    <p class="prdcategory-title">Product Categories</p>
+                                    <div class="prdcategory-list">
+                                        <div class="prdcategory-list-item">
+                                            <a href="#" class="prdcategory-list-item-link">
+                                                <p class="list-item-link-text">Coat and Jackets</p>
+                                                <i class="fa-solid fa-angle-right list-item-link-icon"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="prdcategory-list-item">
+                                            <a href="#" class="prdcategory-list-item-link">
+                                                <p class="list-item-link-text">Dressses</p>
+                                                <i class="fa-solid fa-angle-right list-item-link-icon"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="prdcategory-list-item">
+                                            <a href="#" class="prdcategory-list-item-link">
+                                                <p class="list-item-link-text">Playsuit</p>
+                                                <i class="fa-solid fa-angle-right list-item-link-icon"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="prdcategory-list-item">
+                                            <a href="#" class="prdcategory-list-item-link">
+                                                <p class="list-item-link-text">Short</p>
+                                                <i class="fa-solid fa-angle-right list-item-link-icon"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="prdcategory-list-item">
+                                            <a href="#" class="prdcategory-list-item-link">
+                                                <p class="list-item-link-text">Top</p>
+                                                <i class="fa-solid fa-angle-right list-item-link-icon"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="prdcategory-list-item">
+                                            <a href="#" class="prdcategory-list-item-link">
+                                                <p class="list-item-link-text">Bottoms</p>
+                                                <i class="fa-solid fa-angle-right list-item-link-icon"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="shop-left-featured">
+                                    <div class="left-featured-title">Featured Product</div>
+                                    <div class="left-featured-list">
+                                        <div class="featured-list-item">
+                                            <div class="featured-list-item-container"> </div>
+
+                                            <div class="featured-list-item-info">
+                                                <p class="item-info-prdname">Tropical Playsuit</p>
+                                                <p class="item-info-price">$100</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="featured-list-item">
+                                            <div class="featured-list-item-container"> </div>
+
+                                            <div class="featured-list-item-info">
+                                                <p class="item-info-prdname">Tropical Playsuit</p>
+                                                <p class="item-info-price">$100</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="featured-list-item">
+                                            <div class="featured-list-item-container"> </div>
+
+                                            <div class="featured-list-item-info">
+                                                <p class="item-info-prdname">Tropical Playsuit</p>
+                                                <p class="item-info-price">$100</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="featured-list-item">
+                                            <div class="featured-list-item-container"> </div>
+
+                                            <div class="featured-list-item-info">
+                                                <p class="item-info-prdname">Tropical Playsuit</p>
+                                                <p class="item-info-price">$100</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="featured-list-item">
+                                            <div class="featured-list-item-container"> </div>
+
+                                            <div class="featured-list-item-info">
+                                                <p class="item-info-prdname">Tropical Playsuit</p>
+                                                <p class="item-info-price">$100</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="featured-list-item">
+                                            <div class="featured-list-item-container"> </div>
+
+                                            <div class="featured-list-item-info">
+                                                <p class="item-info-prdname">Tropical Playsuit</p>
+                                                <p class="item-info-price">$100</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col l-8 m-12 c-12">
+                            <div class="shop-right">
+                                <div class="row">
+                                    <div class="col l-6 m-6 c-12">
+                                        <div class="shop-right-image">
+                                            <div class="right-image-info">
+                                                <p class="image-info-name">Urbano Jacket</p>
+                                                <div class="image-info-star">
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                </div>
+                                                <p class="image-info-text">watchmenow</p>
+                                                <p class="image-info-price">$99</p>
+                                            </div>
+
+                                            <div class="right-image-heart">
+                                                <i class="fa-regular fa-heart image-heart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col l-6 m-6 c-12">
+                                        <div class="shop-right-image">
+                                            <div class="right-image-info">
+                                                <p class="image-info-name">Urbano Jacket</p>
+                                                <div class="image-info-star">
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                </div>
+                                                <p class="image-info-text">watchmenow</p>
+                                                <p class="image-info-price">$99</p>
+                                            </div>
+
+                                            <div class="right-image-heart">
+                                                <i class="fa-regular fa-heart image-heart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col l-6 m-6 c-12">
+                                        <div class="shop-right-image">
+                                            <div class="right-image-info">
+                                                <p class="image-info-name">Urbano Jacket</p>
+                                                <div class="image-info-star">
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                </div>
+                                                <p class="image-info-text">watchmenow</p>
+                                                <p class="image-info-price">$99</p>
+                                            </div>
+
+                                            <div class="right-image-heart">
+                                                <i class="fa-regular fa-heart image-heart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col l-6 m-6 c-12">
+                                        <div class="shop-right-image">
+                                            <div class="right-image-info">
+                                                <p class="image-info-name">Urbano Jacket</p>
+                                                <div class="image-info-star">
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                </div>
+                                                <p class="image-info-text">watchmenow</p>
+                                                <p class="image-info-price">$99</p>
+                                            </div>
+
+                                            <div class="right-image-heart">
+                                                <i class="fa-regular fa-heart image-heart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col l-6 m-6 c-12">
+                                        <div class="shop-right-image">
+                                            <div class="right-image-info">
+                                                <p class="image-info-name">Urbano Jacket</p>
+                                                <div class="image-info-star">
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                </div>
+                                                <p class="image-info-text">watchmenow</p>
+                                                <p class="image-info-price">$99</p>
+                                            </div>
+
+                                            <div class="right-image-heart">
+                                                <i class="fa-regular fa-heart image-heart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col l-6 m-6 c-12">
+                                        <div class="shop-right-image">
+                                            <div class="right-image-info">
+                                                <p class="image-info-name">Urbano Jacket</p>
+                                                <div class="image-info-star">
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                </div>
+                                                <p class="image-info-text">watchmenow</p>
+                                                <p class="image-info-price">$99</p>
+                                            </div>
+
+                                            <div class="right-image-heart">
+                                                <i class="fa-regular fa-heart image-heart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col l-6 m-6 c-12">
+                                        <div class="shop-right-image">
+                                            <div class="right-image-info">
+                                                <p class="image-info-name">Urbano Jacket</p>
+                                                <div class="image-info-star">
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                </div>
+                                                <p class="image-info-text">watchmenow</p>
+                                                <p class="image-info-price">$99</p>
+                                            </div>
+
+                                            <div class="right-image-heart">
+                                                <i class="fa-regular fa-heart image-heart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col l-6 m-6 c-12">
+                                        <div class="shop-right-image">
+                                            <div class="right-image-info">
+                                                <p class="image-info-name">Urbano Jacket</p>
+                                                <div class="image-info-star">
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                    <i class="fa-solid fa-star info-star-icon"></i>
+                                                </div>
+                                                <p class="image-info-text">watchmenow</p>
+                                                <p class="image-info-price">$99</p>
+                                            </div>
+
+                                            <div class="right-image-heart">
+                                                <i class="fa-regular fa-heart image-heart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shop-seemore">
+                                <button type="button" value="See More" class="btn seemore-button">See More</button>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <!--End shop-->
+
+        <!--Start Form-->
+        <div class="form">
+            <form id="form" action="" method="get">
+                <div class="grid">
+                    <div class="form-content">
+                        <h1 class="form-title">Join Our News Letters</h1>
+                        <p class="form-description">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster </p>
+                        <div class="form-email">
+                            <input type="text" class="form-email__input" placeholder="Insert your mail here">
+                            <button type="submit" class="btn form-email__submit"><i class="fa-solid fa-circle-arrow-right form-email__submit-icon"></i></button>
+                        </div>
+                        <p class="form-message"></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--End Form-->
+
+        <!--Start Footer-->
+        <div class="footer">
+            <div class="grid wide">
+                <div class="footer-content">
+                    <div class="footer-content__brand">
+                        <img style="width: 100%; margin: auto;" src="https://static.zennioptical.com/dev/image/site/logo/zenni-logo.png" alt="">
+                    </div>
+                    <div class="footer-content__title">
+                        <h1>Dealerz</h1>
+                        <p>Privacy Policy</p>
+                        <p>Terms and Condition</p>
+                        <p>@2020 TanahAir Studio. All rights reserved.</p>
+                    </div>
+                    <div class="footer-content__social-media">
+                        <a class="footer-content__social-media-item" href="#"><img src="./assets/img/fb.png" alt=""></a>
+                        <a class="footer-content__social-media-item" href="#"><img src="./assets/img/ig.png" alt=""></a>
+                        <a class="footer-content__social-media-item" href="#"><img src="./assets/img/yt.png" alt=""></a>
+                        <a class="footer-content__social-media-item" href="#"><img src="./assets/img/tw.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Footer-->
+    </div>
+    <script src="/assets/js/validationform.js"></script>
+</body>
+</html>

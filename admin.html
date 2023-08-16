@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+    <!-- Google Font DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!--Reset CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/admin.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+</head>
+<body>
+    <div class="app">
+        <!--Start Sidebar-->
+        <div class="left-sidebar"> 
+            <h1 class="sidebar-brand">Eya Glasses
+            </h1>
+            <i class="close fa-solid fa-xmark"></i>
+            <ul class="sidebar-list">
+                <li class="sidebar-item sidebar-item--active">
+                    <a href="#" class="sidebar-item__link">
+                        <img src="./assets/img/dashboard.png" alt="" class="sidebar-item__icon">
+                        Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-item__link">
+                        <img src="./assets/img/clipboard-tick.png" alt="" class="sidebar-item__icon">
+                        Lab Test
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-item__link">
+                        <img src="./assets/img/calendar-tick.png" alt="" class="sidebar-item__icon">
+                        Appointment
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-item__link">
+                        <img src="./assets/img/bag-tick-2.png" alt="" class="sidebar-item__icon">
+                        Medicine Order
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-item__link">
+                        <img src="./assets/img/sms.png" alt="" class="sidebar-item__icon">
+                        Message
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-item__link">
+                        <img src="./assets/img/empty-wallet.png" alt="" class="sidebar-item__icon">
+                        Payment
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-item__link">
+                        <img src="./assets/img/setting-2.png" alt="" class="sidebar-item__icon">
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--End Sidebar-->
+
+        <!--Start Topbar-->
+        <div class="topbar">
+            <div class="navbar-collapse">
+                <div class="menu">
+                    <i menu-icon class="fa-solid fa-bars"></i>
+                </div>
+                <div class="collapse__search">
+                    <i class="fa-solid fa-magnifying-glass collapse__search-icon"></i>
+                    <input type="text" placeholder="Search" class="collapse__search-input">
+                </div>
+                <div class="collapse__profile">
+                    <div class="profile-notify">
+                        <i class="fa-solid fa-circle profile-notify-dot"></i>
+                        <i class="fa-regular fa-bell profile-notify-icon"></i>
+                    </div>
+                    <div class="profile-user">
+                        <img style="width: 100%;" src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/340297637_913234096596093_1994283190320924295_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=l3G4UtQOhi4AX9sMcRD&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBorTT4UD1iC8_ur59IfDQyrrXN1o1TgWE4f7Cr7DhCZw&oe=64541683" alt="" class="">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!--End Topbar-->
+        <div class="wrapper">
+            <div class="sales-infomation">
+                <h1 class="sales__title">
+                    Sales Information
+                </h1>
+                <form id="form-find" class="form" action="" method="get">
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 find-item">
+                            <label for="customer" class="find-item__title">Customer</label>
+                            <input type="text" class="find-item__input" placeholder="Enter Costumer Name" id="customer">
+                            <p class="form-message"></p>
+                        </div> 
+                        <div class="col l-3 m-6 c-12 find-item">
+                            <label for="invoice" class="find-item__title">Invoice ID</label>
+                            <input type="text" class="find-item__input" placeholder="Enter Invoice ID" id="invoice">
+                            <p class="form-message"></p>
+                        </div>
+                        <div class="col l-3 m-6 c-12 find-item">
+                            <label for="start-date" class="find-item__title">Start Date</label>
+                            <input type="text" class="find-item__input" placeholder="Start Date" id="start-date">
+                            <p class="form-message"></p>
+                        </div>
+                        <div class="col l-3 m-6 c-12 find-item">
+                            <label for="end-date" class="find-item__title">End Date</label>
+                            <input type="text" class="find-item__input" placeholder="End Date" id="end-date">
+                            <p class="form-message"></p>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+            <div class="sales-person">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th><input type="checkbox"></th>
+                        <th>Invoice ID</th>
+                        <th>Date</th>
+                        <th>Customer</th>
+                        <th>Payable Amount</th>
+                        <th>Paid Amount</th>
+                        <th>Due</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>#AHGA68</td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>#AHGA68</td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>#AHGA68</td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>#AHGA68</td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>#AHGA68</td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>#AHGA68</td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>#AHGA68</td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>#AHGA68</td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>#AHGA68</td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>#AHGA68</td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/validationadmin.js"></script>
+    <script src="./assets/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <!-- Google Font DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!--Reset CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+</head>
+<body>
+    <div class="app">
+        <!--Start Navbar-->
+        <div class="navbar">
+            <div class="brand-wrapper">
+                <div class="grid wide">
+                    <div class="brand">
+                        <div class="navbar__brand-title">
+                            <h1 class="brand-title-text"><b>Eya Glasses</b></h1>
+                        </div>
+    
+                        <div class="navbar__brand-phoneship">
+                            <ul class="brand-phoneship-list">
+                                <li class="phoneship-list-item">
+                                    <i class="fa-sharp fa-solid fa-phone logo-icon phoneship-list-item-icon"></i>
+                                    Call Center
+                                </li>
+    
+                                <li class="phoneship-list-item phoneship-left">
+                                    <i class="fa-solid fa-truck-fast logo-icon phoneship-list-item-icon"></i>
+                                    Shipping & Returns 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-wrapper">
+                <div class="grid wide">
+                    <div class="header">
+                        <div class="navbar__catesearch-category">
+                            <ul class="catesearch-category-list">
+                                <li class="category-list-item">
+                                    <a href="shop.html" class="category-list-item-link">Shop</a>
+                                </li>
+    
+                                <li class="category-list-item">
+                                    <a href="details.html" class="category-list-item-link">Details</a>
+                                </li>
+    
+                                <li class="category-list-item">
+                                    <a href="gallery.html" class="category-list-item-link">Gallery</a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="navbar__catesearch-search">
+                            <input type="text"  class="category-search-input" placeholder="Search what you need ">
+                            <i class="fa-solid fa-magnifying-glass category-search-icon"></i>
+                        </div>
+    
+                        <div class="navbar__catesearch-menu">
+                            <ul class="catesearch-list">
+                                <li class="catesearch-list-item">
+                                    <a href="#" class="catesearch-list-item-link"><i class="fa-regular fa-heart catesearch-list-item-icon"></i></a>
+                                </li>
+    
+                                <li class="catesearch-list-item">
+                                    <a href="cart.html" class="catesearch-list-item-link"><i class="fa-solid fa-cart-shopping catesearch-list-item-icon"></i></a>
+                                </li>
+    
+                                <li class="catesearch-list-item">
+                                    <a href="#" class="catesearch-list-item-link"><i class="fa-solid fa-user catesearch-list-item-icon"></i></a>
+                                </li>
+    
+                                <li class="catesearch-list-item">
+                                    <a href="#" class="catesearch-list-item-link"><i class="fa-regular fa-bell catesearch-list-item-icon"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!--End Navbar-->
+        </div>
+
+        <!--Start Hero-->
+        <div class="hero">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-6 m-12 c-12">
+                        <img class="hero-img" style="width: 100%; height: 100%; padding: 60px 0;" src="https://static.zennioptical.com/marketing/homepage/2tile/2_tile_var_b_1/Trends_2Tile-lg.png" alt="">
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="hero-main">
+                            <h1 class="hero-title">Your Premium Sound, Unplugged</h1>
+                            <p class="hero-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <button class="btn btn--find-out-more">Find out More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Hero-->
+
+        <!--Start My Cart-->
+        <div class="myCart">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-7 m-12 c-12">
+                        <div class="myCart__left">
+                            <div class="myCart__menu">
+                                <ul class="myCart__menu-list">
+                                    <li class="menu-list-item">
+                                        <a href="#" class="menu-list-item-link link-select">1.Shopping Cart</a>
+                                    </li>
+            
+                                    <li class="menu-list-item">
+                                        <a href="#" class="menu-list-item-link">2.Checkout</a>
+                                    </li>
+            
+                                    <li class="menu-list-item">
+                                        <a href="#" class="menu-list-item-link">3.Order Succesed</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                                <div class="myCart__title">
+                                    My Cart
+                                </div>
+        
+                                <div class="myCart__listproduct">
+                                    <div class="myCart__listproduct-item">
+                                        <div class="listproduct-item-image">
+                                            <img class="listproduct-item-img" src="https://static.zennioptical.com/production/products/general/44/56/4456921-eyeglasses-angle-view.jpg" alt="">
+                                        </div>
+        
+                                        <div class="listproduct-item-information">
+                                            <div class="myCart__listproduct-item-title">Kids' Square Glasses 4456921</div>
+        
+                                            <div class="myCart__listproduct-item-size">
+                                                <div class="listproduct-item-size-text">
+                                                    <p class="size-text1">Size</p>
+                                                    <p class="size-text2">:</p>
+                                                </div>
+                                            <div class="listproduct-item-size-sizing">M</div>
+                                            </div>
+        
+                                            <div class="myCart__listproduct-item-quantity">
+                                                <div class="listproduct-item-quantity-text">
+                                                    <p class="quantity-text1">Quantity</p>
+                                                    <p class="quantity-text2">:</p>
+                                                </div>
+        
+                                                <div class="listproduct-item-quantity-qut">
+                                                    <p class="text1">-</p>
+                                                    <p class="text2">5</p>
+                                                    <p class="text3">+</p>
+                                                </div>
+                                            </div>
+        
+                                            <div class="myCart__listproduct-item-priceAndDelete">
+                                                <div class="item-price">
+                                                    $25.95
+                                                </div>
+        
+                                                <div class="item-delete">
+                                                    <a href="#" class="item-delete-deleted">
+                                                        <i class="fa-regular fa-trash-can deleted-icon"></i>
+                                                    </a>
+        
+                                                    <a href="#" class="item-delete-wishlist">
+                                                        <p class="wishlist-text">Wishlist</p>
+                                                        <i class="fa-regular fa-heart wishlist-icon"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="myCart__listproduct-item">
+                                        <div class="listproduct-item-image">
+                                            <img class="listproduct-item-img" src="https://static.zennioptical.com/production/products/general/32/34/3234617-eyeglasses-angle-view.jpg" alt="">
+                                        </div>
+        
+                                        <div class="listproduct-item-information">
+                                            <div class="myCart__listproduct-item-title">Cat-Eye Glasses 3234617</div>
+        
+                                            <div class="myCart__listproduct-item-size">
+                                                <div class="listproduct-item-size-text">
+                                                    <p class="size-text1">Size</p>
+                                                    <p class="size-text2">:</p>
+                                                </div>
+                                            <div class="listproduct-item-size-sizing">M</div>
+                                            </div>
+        
+                                            <div class="myCart__listproduct-item-quantity">
+                                                <div class="listproduct-item-quantity-text">
+                                                    <p class="quantity-text1">Quantity</p>
+                                                    <p class="quantity-text2">:</p>
+                                                </div>
+        
+                                                <div class="listproduct-item-quantity-qut">
+                                                    <p class="text1">-</p>
+                                                    <p class="text2">5</p>
+                                                    <p class="text3">+</p>
+                                                </div>
+                                            </div>
+        
+                                            <div class="myCart__listproduct-item-priceAndDelete">
+                                                <div class="item-price">
+                                                    $39.95
+                                                </div>
+        
+                                                <div class="item-delete">
+                                                    <a href="#" class="item-delete-deleted">
+                                                        <i class="fa-regular fa-trash-can deleted-icon"></i>
+                                                    </a>
+        
+                                                    <a href="#" class="item-delete-wishlist">
+                                                        <p class="wishlist-text">Wishlist</p>
+                                                        <i class="fa-regular fa-heart wishlist-icon"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="myCart__listproduct-item">
+                                        <div class="listproduct-item-image">
+                                            <img class="listproduct-item-img" src="https://static.zennioptical.com/production/products/general/95/04/950421-eyeglasses-angle-view.jpg" alt="">
+                                        </div>
+        
+                                        <div class="listproduct-item-information">
+                                            <div class="myCart__listproduct-item-title">Rectangle Glasses 950421</div>
+        
+                                            <div class="myCart__listproduct-item-size">
+                                                <div class="listproduct-item-size-text">
+                                                    <p class="size-text1">Size</p>
+                                                    <p class="size-text2">:</p>
+                                                </div>
+                                            <div class="listproduct-item-size-sizing">M</div>
+                                            </div>
+        
+                                            <div class="myCart__listproduct-item-quantity">
+                                                <div class="listproduct-item-quantity-text">
+                                                    <p class="quantity-text1">Quantity</p>
+                                                    <p class="quantity-text2">:</p>
+                                                </div>
+        
+                                                <div class="listproduct-item-quantity-qut">
+                                                    <p class="text1">-</p>
+                                                    <p class="text2">5</p>
+                                                    <p class="text3">+</p>
+                                                </div>
+                                            </div>
+        
+                                            <div class="myCart__listproduct-item-priceAndDelete">
+                                                <div class="item-price">
+                                                    $15.95
+                                                </div>
+        
+                                                <div class="item-delete">
+                                                    <a href="#" class="item-delete-deleted">
+                                                        <i class="fa-regular fa-trash-can deleted-icon"></i>
+                                                    </a>
+        
+                                                    <a href="#" class="item-delete-wishlist">
+                                                        <p class="wishlist-text">Wishlist</p>
+                                                        <i class="fa-regular fa-heart wishlist-icon"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="myCart__listproduct-item">
+                                        <div class="listproduct-item-image">
+                                            <img class="listproduct-item-img" src="https://static.zennioptical.com/production/products/general/78/16/7816823-eyeglasses-angle-view.jpg" alt="">
+                                        </div>
+        
+                                        <div class="listproduct-item-information">
+                                            <div class="myCart__listproduct-item-title">Square Glasses 7816823</div>
+        
+                                            <div class="myCart__listproduct-item-size">
+                                                <div class="listproduct-item-size-text">
+                                                    <p class="size-text1">Size</p>
+                                                    <p class="size-text2">:</p>
+                                                </div>
+                                            <div class="listproduct-item-size-sizing">M</div>
+                                            </div>
+        
+                                            <div class="myCart__listproduct-item-quantity">
+                                                <div class="listproduct-item-quantity-text">
+                                                    <p class="quantity-text1">Quantity</p>
+                                                    <p class="quantity-text2">:</p>
+                                                </div>
+        
+                                                <div class="listproduct-item-quantity-qut">
+                                                    <p class="text1">-</p>
+                                                    <p class="text2">5</p>
+                                                    <p class="text3">+</p>
+                                                </div>
+                                            </div>
+        
+                                            <div class="myCart__listproduct-item-priceAndDelete">
+                                                <div class="item-price">
+                                                    $19.95
+                                                </div>
+        
+                                                <div class="item-delete">
+                                                    <a href="#" class="item-delete-deleted">
+                                                        <i class="fa-regular fa-trash-can deleted-icon"></i>
+                                                    </a>
+        
+                                                    <a href="#" class="item-delete-wishlist">
+                                                        <p class="wishlist-text">Wishlist</p>
+                                                        <i class="fa-regular fa-heart wishlist-icon"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-5 m-12 c-12">
+                            <div class="myCart-right ">
+                                <div class="myCart-right-coupon">
+                                    <div class="right-coupon-title">Have a Coupon?</div>
+                                    <div class="right-coupon-input">
+                                        <input type="text" class="input-text" placeholder="Input your email here">
+                                    </div>
+                                    <div class="right-coupon-apply">
+                                        <button type="button" class="btn apply-button">Apply</button>
+                                    </div>
+                                </div>
+
+                                <div class="myCart-right-total">
+                                    <div class="right-total-title">Cart Totals</div>
+                                    <div class="right-total-information">
+                                        <div class="total-information-item">
+                                            <p class="information-item-title">Subtotal</p>
+                                            <p class="information-item-text">$150</p>
+                                        </div>
+
+                                        <div class="total-information-item item-shipping">
+                                            <p class="information-item-title">Shipping</p>
+                                            <div class="item-shipping-text">
+                                                <p class="item-shipping-text1">Free Shipping</p>
+                                                <div class="item-shipping-text2">
+                                                    <p class="shipping-text2-line1">Shipping to Sidney</p>
+                                                    <p class="shipping-text2-line2">Change</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="total-information-item">
+                                            <p class="information-item-title">Total</p>
+                                            <p class="information-item-text total">$350</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="right-total-checkout">
+                                        <button type="button" class="btn checkout-button">
+                                            Checkout
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>=
+        <!--End My Cart-->
+
+        <!--Start Flash Sale-->
+        <div class="flash-sale">
+            <div class="flash-container">
+                <h1 class="flash__title">Best Sellers</h1>
+                <p class="flash__description">
+                    Explore customer favorites in every style.
+                </p>
+                <div class="flash__slides">
+                    <div class="flash__slides-list">
+                        <div class="flash__slides-item first">
+                            <div class="flash__slides-item__img">
+                                <img src="https://static.zennioptical.com/production/products/general/78/13/7813125-eyeglasses-angle-view.jpg" style="width: 100%; height: 50%;" alt="">
+                            </div>  
+                            <div class="flash__slides-item__content">
+                                <h3 class="flash__slides-item__title">Square 7813125</h3>
+                                <p class="flash__slides-item__category">Progressives</p>
+                                <div class="flash__slides-item__prices">
+                                    <span class="flash__slides-item__price-new">$15.95</span>
+                                    <span class="flash__slides-item__price-old">$16.95</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flash__slides-item first">
+                            <div class="flash__slides-item__img">
+                                <img src="https://static.zennioptical.com/production/products/general/20/32/2032323-eyeglasses-angle-view.jpg" style="width: 100%; height: 50%;" alt="">
+                            </div>  
+                            <div class="flash__slides-item__content">
+                                <h3 class="flash__slides-item__title">Oval 2032323</h3>
+                                <p class="flash__slides-item__category">Bifocals</p>
+                                <div class="flash__slides-item__prices">
+                                    <span class="flash__slides-item__price-new">$6.95</span>
+                                    <span class="flash__slides-item__price-old">$10.5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flash__slides-item first">
+                            <div class="flash__slides-item__img">
+                                <img src="https://static.zennioptical.com/production/products/general/20/38/2038816-eyeglasses-angle-view.jpg" style="width: 100%; height: 50%;" alt="">
+                            </div>  
+                            <div class="flash__slides-item__content">
+                                <h3 class="flash__slides-item__title">Blatic 20238816</h3>
+                                <p class="flash__slides-item__category">Progressives</p>
+                                <div class="flash__slides-item__prices">
+                                    <span class="flash__slides-item__price-new">$39.85</span>
+                                    <span class="flash__slides-item__price-old">$45.52</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flash__slides-item first">
+                            <div class="flash__slides-item__img">
+                                <img src="https://static.zennioptical.com/production/products/general/20/38/2038816-eyeglasses-angle-view.jpg" style="width: 100%; height: 50%;" alt="">
+                            </div>  
+                            <div class="flash__slides-item__content">
+                                <h3 class="flash__slides-item__title">Blatic 20238816</h3>
+                                <p class="flash__slides-item__category">Progressives</p>
+                                <div class="flash__slides-item__prices">
+                                    <span class="flash__slides-item__price-new">$39.85</span>
+                                    <span class="flash__slides-item__price-old">$45.52</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!--End Flash Sale-->
+
+        <!--Start Form-->
+        <div class="form">
+            <form id="form" action="" method="get">
+                <div class="grid">
+                    <div class="form-content">
+                        <h1 class="form-title">Join Our News Letters</h1>
+                        <p class="form-description">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster </p>
+                        <div class="form-email">
+                            <input type="text" class="form-email__input" placeholder="Insert your mail here">
+                            <button type="submit" class="btn form-email__submit"><i class="fa-solid fa-circle-arrow-right form-email__submit-icon"></i></button>
+                        </div>
+                        <p class="form-message"></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--End Form-->
+
+        <!--Start Footer-->
+        <div class="footer">
+            <div class="grid wide">
+                <div class="footer-content">
+                    <div class="footer-content__brand">
+                        <img style="width: 100%; margin: auto;" src="https://static.zennioptical.com/dev/image/site/logo/zenni-logo.png" alt="">
+                    </div>
+                    <div class="footer-content__title">
+                        <h1>Dealerz</h1>
+                        <p>Privacy Policy</p>
+                        <p>Terms and Condition</p>
+                        <p>@2020 TanahAir Studio. All rights reserved.</p>
+                    </div>
+                    <div class="footer-content__social-media">
+                        <a class="footer-content__social-media-item" href="#"><img src="./assets/img/fb.png" alt=""></a>
+                        <a class="footer-content__social-media-item" href="#"><img src="./assets/img/ig.png" alt=""></a>
+                        <a class="footer-content__social-media-item" href="#"><img src="./assets/img/yt.png" alt=""></a>
+                        <a class="footer-content__social-media-item" href="#"><img src="./assets/img/tw.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Footer-->
+    </div>
+    <script src="/assets/js/validationform.js"></script>
+</body>
+</html>
